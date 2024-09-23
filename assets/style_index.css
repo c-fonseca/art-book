@@ -13,7 +13,7 @@ body{
 header {
     display: flex;
     align-items: center;
-    height: 200px;
+    height: 160px;
     background-color: rgba(101, 22, 175, 0.26);
 }
 
