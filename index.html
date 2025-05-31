@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,51 +11,52 @@
     <link rel="stylesheet" href="assets/style_index.css">
 
     <title>Art'Book</title>
-    
+
 </head>
+
 <body>
 
-    <header>
+    <div class="container-header">
         <section class="section1">
             <div class="logo">
                 <h1 class="logo">ART' BOOK</h1>
             </div>
-                <div class="pesquisa"><input class="barra-de-pesquisa" type="text">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            
+            <div class="pesquisa"><input class="barra-de-pesquisa" type="text" placeholder="Buscar título ou autor">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
             <div class="carrinho">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <p><a href="#">CARRINHO</a></p>
             </div>
         </section>
-    </header>
 
-    <section class="section2">
-        <div>
-            <nav class="topicos">
+        <section class="section2">
+            <div>
                 <ul class="links">
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="#">MAIS VENDIDOS</a></li>
-                    <li><a href="#">LANÇAMENTOS</a></li>
-                    <li><a href="#">INFANTIL</a></li>
-                    <li><a href="#">PRÉ VENDA</a></li>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#maisVendidos">MAIS VENDIDOS</a></li>
+                    <li><a href="#lancamentos">LANÇAMENTOS</a></li>
+                    <li><a href="#infantil">INFANTIL</a></li>
+                    <li><a href="#preVenda">PRÉ VENDA</a></li>
                 </ul>
-            </nav>
-        </div>
-    </section>
-
-    <section class="section3">
-        <div class="banner">
-            <img class="books-and-headphone" src="assets/imagens/books-and-headphones.jpg" alt="livros com fone de ouvido">
-        </div>
-        <div class="frase"><p>Cada livro é uma nova canção. Qual será a sua próxima melodia?</p></div>
-    </section>
+            </div>
+        </section>
+    </div>
 
     <main>
+        <section class="section3">
+        <div class="banner">
+            <img class="books-and-headphone" src="assets/imagens/books-and-headphones.jpg"
+                alt="livros com fone de ouvido">
+        </div>
+        <div class="frase">
+            <p>Cada livro é uma nova canção. Qual será a sua próxima melodia?</p>
+        </div>
+    </section>
 
         <!--Seção mais vendidos-->
-        <h2 class="titulo-categoria">MAIS VENDIDOS</h2>
+        <h2 id="maisVendidos" class="titulo-categoria">MAIS VENDIDOS</h2>
 
         <section class="secao-mais-vendidos">
             <div class="carrossel">
@@ -63,21 +65,24 @@
                     <ul class="trilha-carrossel">
                         <li class="slide-carrossel">
                             <div class="card-carrossel">
-                                <img src="assets/imagens/a_biblioteca_da_meia_noite.jpeg" alt="Roube Como um Artista">
+                                <img src="assets/imagens/a_biblioteca_da_meia_noite.jpeg"
+                                    alt="A biblioteca da meia noite">
                                 <p>A BIBLIOTECA DA MEIA NOITE</p>
                                 <p>MATT HAIG</p>
                                 <p>R$ 54,89</p>
                                 <button class="btn-comprar">Comprar</button>
                             </div>
                             <div class="card-carrossel">
-                                <img src="assets/imagens/empresas_feitas_para_vencer.jpeg" alt="Empresas Feitas para Vencer">
+                                <img src="assets/imagens/empresas_feitas_para_vencer.jpeg"
+                                    alt="Empresas Feitas para Vencer">
                                 <p>Empresas Feitas para Vencer</p>
                                 <p>Jim Collins</p>
                                 <p>R$ 94,60</p>
                                 <button class="btn-comprar">Comprar</button>
                             </div>
                             <div class="card-carrossel">
-                                <img src="assets/imagens/o_jeito_disney_de_encantar_os_clientes.jpeg" alt="O Jeito Disney de Encantar os Clientes">
+                                <img src="assets/imagens/o_jeito_disney_de_encantar_os_clientes.jpeg"
+                                    alt="O Jeito Disney de Encantar os Clientes">
                                 <p>O Jeito Disney de Encantar os Clientes</p>
                                 <p>Disney Institute</p>
                                 <p>R$ 79,90</p>
@@ -91,16 +96,17 @@
                                 <p>Jeff Kinney</p>
                                 <p>R$ 66,90</p>
                                 <button class="btn-comprar">Comprar</button>
-                                </div>
+                            </div>
                             <div class="card-carrossel">
-                                <img src="assets/imagens/trabalhe_4_horas_por_semana.jpeg" alt="Trabalhe 4 Horas por Semana">
+                                <img src="assets/imagens/trabalhe_4_horas_por_semana.jpeg"
+                                    alt="Trabalhe 4 Horas por Semana">
                                 <p>Trabalhe 4 Horas por Semana</p>
                                 <p>Timothy Ferriss</p>
                                 <p>R$ 84,90</p>
                                 <button class="btn-comprar">Comprar</button>
                             </div>
                             <div class="card-carrossel">
-                                <img src="assets/imagens/a_revolução_dos_bichos.jpeg" alt="Outro Livro">
+                                <img src="assets/imagens/a_revolução_dos_bichos.jpeg" alt="A revolução dos bichos">
                                 <p>A revolução dos bichos</p>
                                 <p>George Orwell</p>
                                 <p>R$ 29,90</p>
@@ -116,9 +122,9 @@
                                 <p>R$ 66,99</p>
                                 <button class="btn-comprar">Comprar</button>
                             </div>
-                        
+
                             <div class="card-carrossel">
-                                <img src="assets/imagens/chama_de_ferro.jpeg" alt="Outro Livro">
+                                <img src="assets/imagens/chama_de_ferro.jpeg" alt="Chama de ferro">
                                 <p>Chama de ferro</p>
                                 <p>Rebecca Yarros</p>
                                 <p>R$ 99,90</p>
@@ -127,9 +133,9 @@
 
                             <div class="card-carrossel">
                                 <img src="assets/imagens/e_assim_que_acaba.jpeg" alt="É assim que acaba">
-                                <p>Chama de ferro</p>
-                                <p>Rebecca Yarros</p>
-                                <p>R$ 99,90</p>
+                                <p>É assim que acaba</p>
+                                <p>Collen Hoover</p>
+                                <p>R$ 40,50</p>
                                 <button class="btn-comprar">Comprar</button>
                             </div>
                         </li>
@@ -146,7 +152,7 @@
                             </div>
 
                             <div class="card-carrossel">
-                                <img src="assets/imagens/diario_anne_frank.jpeg" alt="Outro Livro">
+                                <img src="assets/imagens/diario_anne_frank.jpeg" alt="Diário de Anne Frank">
                                 <p>O diário de Anne Frank</p>
                                 <p>Anne Frank</p>
                                 <p>R$ 39,90</p>
@@ -154,7 +160,7 @@
                             </div>
 
                             <div class="card-carrossel">
-                                <img src="assets/imagens/cafe_com_deus_pai.jpeg" alt="É assim que acaba">
+                                <img src="assets/imagens/cafe_com_deus_pai.jpeg" alt="Café com Deus pai">
                                 <p>Café com Deus pai</p>
                                 <p>Junior Rostirola</p>
                                 <p>R$ 94,90</p>
@@ -171,7 +177,7 @@
 
         <!--Seção lançamentos-->
 
-        <h2 class="titulo-categoria">LANÇAMENTOS</h2>
+        <h2 id="lancamentos" class="titulo-categoria">LANÇAMENTOS</h2>
         <section>
             <div class="carrossel">
                 <button class="anterior">❮</button>
@@ -179,21 +185,21 @@
                     <ul class="trilha-carrossel">
                         <li class="slide-carrossel">
                             <div class="card-carrossel">
-                                <img src="assets/imagens/por_que_mentimos.jpeg" alt="Roube Como um Artista">
+                                <img src="assets/imagens/por_que_mentimos.jpeg" alt="Por que mentimos">
                                 <p>Por que mentimos</p>
                                 <p>Karin Slaughter</p>
                                 <p>R$ 69,90</p>
                                 <button class="btn-comprar">Comprar</button>
                             </div>
                             <div class="card-carrossel">
-                                <img src="assets/imagens/a_contadora.jpeg" alt="Empresas Feitas para Vencer">
+                                <img src="assets/imagens/a_contadora.jpeg" alt="A contadora">
                                 <p>A contadora</p>
                                 <p>Freida Mcfadden</p>
                                 <p>R$ 59,90</p>
                                 <button class="btn-comprar">Comprar</button>
                             </div>
                             <div class="card-carrossel">
-                                <img src="assets/imagens/monique_se_liberta.jpeg" alt="Trabalhe 4 Horas por Semana">
+                                <img src="assets/imagens/monique_se_liberta.jpeg" alt="Monique se liberta">
                                 <p>Monique se liberta</p>
                                 <p>Edouard Louis</p>
                                 <p>R$ 54,90</p>
@@ -202,41 +208,41 @@
 
                         </li>
                         <li class="slide-carrossel">
-                                <div class="card-carrossel">
-                                <img src="assets/imagens/um_amor_sem_freio.jpeg" alt="Diario de um banana 2">
+                            <div class="card-carrossel">
+                                <img src="assets/imagens/um_amor_sem_freio.jpeg" alt="Um amor sem freio">
                                 <p>Um amor sem freio</p>
                                 <p>JSimone Soltani</p>
                                 <p>R$ 59,90</p>
                                 <button class="btn-comprar">Comprar</button>
-                                </div>
+                            </div>
 
-                                <div class="card-carrossel">
-                                    <img src="assets/imagens/mitologia_nordica.jpeg" alt="O Jeito Disney de Encantar os Clientes">
-                                    <p>Mitologia nórdica</p>
-                                    <p>Neil Gaiman</p>
-                                    <p>R$ 59,90</p>
-                                    <button class="btn-comprar">Comprar</button>
-                                </div>
+                            <div class="card-carrossel">
+                                <img src="assets/imagens/mitologia_nordica.jpeg" alt="Mitologia nordica">
+                                <p>Mitologia nórdica</p>
+                                <p>Neil Gaiman</p>
+                                <p>R$ 59,90</p>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
 
-                                <div class="card-carrossel">
+                            <div class="card-carrossel">
                                 <img src="assets/imagens/uma_mulher.jpeg" alt="Uma mulher">
                                 <p>Uma mulher</p>
                                 <p>Annie Ernaux</p>
                                 <p>R$ 64,90</p>
                                 <button class="btn-comprar">Comprar</button>
-                                 </div>
+                            </div>
                         </li>
 
                         <li class="slide-carrossel">
                             <div class="card-carrossel">
-                                <img src="assets/imagens/na_ultima_vaga.jpeg" alt="Outro Livro">
+                                <img src="assets/imagens/na_ultima_vaga.jpeg" alt="Na última vaga">
                                 <p>Na última vaga</p>
                                 <p>Kleiton Ferreita</p>
                                 <p>R$ 59,00</p>
                                 <button class="btn-comprar">Comprar</button>
                             </div>
                             <div class="card-carrossel">
-                                <img src="assets/imagens/principios_milenares.jpeg" alt="Outro Livro">
+                                <img src="assets/imagens/principios_milenares.jpeg" alt="Principios milenares">
                                 <p>Princípios milenares</p>
                                 <p>Tiago Brunet</p>
                                 <p>R$ 62,90</p>
@@ -244,7 +250,7 @@
                             </div>
 
                             <div class="card-carrossel">
-                                <img src="assets/imagens/a_arte_de_viver.jpeg" alt="É assim que acaba">
+                                <img src="assets/imagens/a_arte_de_viver.jpeg" alt="A arte de viver">
                                 <p>A arte de viver</p>
                                 <p>Epiteto</p>
                                 <p>R$ 29,90</p>
@@ -256,7 +262,7 @@
                         <li class="slide-carrossel">
 
                             <div class="card-carrossel">
-                                <img src="assets/imagens/desmarketize-se.jpeg" alt="As 48 Leis do Poder">
+                                <img src="assets/imagens/desmarketize-se.jpeg" alt="Desmarketize-se">
                                 <p>Marketize-se</p>
                                 <p>João Branco</p>
                                 <p>R$ 69,90</p>
@@ -264,7 +270,7 @@
                             </div>
 
                             <div class="card-carrossel">
-                                <img src="assets/imagens/o_pequeno_livro_do_tdah.jpeg" alt="Outro Livro">
+                                <img src="assets/imagens/o_pequeno_livro_do_tdah.jpeg" alt="O pequeno livro do TDAH">
                                 <p>O pequeno livro do TDAH</p>
                                 <p>Alice Gendron</p>
                                 <p>R$ 49,90</p>
@@ -272,14 +278,13 @@
                             </div>
 
                             <div class="card-carrossel">
-                                <img src="assets/imagens/a_montanha_e_voce.png" alt="É assim que acaba">
+                                <img src="assets/imagens/a_montanha_e_voce.png" alt="A montanha é você">
                                 <p>A montanha é você</p>
                                 <p>Brianna Wiest</p>
                                 <p>R$ 59,90</p>
                                 <button class="btn-comprar">Comprar</button>
                             </div>
                         </li>
-
                     </ul>
                 </div>
                 <button class="proximo">❯</button>
@@ -289,7 +294,7 @@
 
         <!--Seção infantil-->
 
-        <h2 class="titulo-categoria">INFANTIL</h2>
+        <h2 id="infantil" class="titulo-categoria">INFANTIL</h2>
         <section>
             <div class="carrossel">
                 <button class="anterior">❮</button>
@@ -297,21 +302,22 @@
                     <ul class="trilha-carrossel">
                         <li class="slide-carrossel">
                             <div class="card-carrossel">
-                                <img src="assets/imagens/nino_o_menino_de_saturno.jpeg" alt="Roube Como um Artista">
+                                <img src="assets/imagens/nino_o_menino_de_saturno.jpeg" alt="Nino o menino de Saturno">
                                 <p>Nino, o menino de Saturno</p>
                                 <p>Ziraldo</p>
                                 <p>R$ 57,00</p>
                                 <button class="btn-comprar">Comprar</button>
                             </div>
                             <div class="card-carrossel">
-                                <img src="assets/imagens/as_travessuras_do_amarelo.jpeg" alt="Empresas Feitas para Vencer">
+                                <img src="assets/imagens/as_travessuras_do_amarelo.jpeg"
+                                    alt="As travessuras do amarelo">
                                 <p>As travessuras do amarelo</p>
                                 <p>Pedro Sales Luis Rosario</p>
                                 <p>R$ 45,00</p>
                                 <button class="btn-comprar">Comprar</button>
                             </div>
                             <div class="card-carrossel">
-                                <img src="assets/imagens/manual_para_super_herois.jpeg" alt="Trabalhe 4 Horas por Semana">
+                                <img src="assets/imagens/manual_para_super_herois.jpeg" alt="Manual para super heróis">
                                 <p>Manual para super-heróis</p>
                                 <p>Laila Zaid</p>
                                 <p>R$ 50,00</p>
@@ -320,41 +326,43 @@
 
                         </li>
                         <li class="slide-carrossel">
-                                <div class="card-carrossel">
+                            <div class="card-carrossel">
                                 <img src="assets/imagens/a_maquina_antibullying.jpeg" alt="A maquina antibullying">
                                 <p>A maquina antibullying</p>
                                 <p>Marcelo Amaral</p>
                                 <p>R$ 35,00</p>
                                 <button class="btn-comprar">Comprar</button>
-                                </div>
+                            </div>
 
-                                <div class="card-carrossel">
-                                    <img src="assets/imagens/o_macaco_roxo_e_os_ninguem.jpeg" alt="O Jeito Disney de Encantar os Clientes">
-                                    <p>O macaco roxo e os ninguens</p>
-                                    <p>Caio Maia</p>
-                                    <p>R$ 35,00</p>
-                                    <button class="btn-comprar">Comprar</button>
-                                </div>
+                            <div class="card-carrossel">
+                                <img src="assets/imagens/o_macaco_roxo_e_os_nin_guens.jpeg"
+                                    alt="O macaco roxo e os nin guens">
+                                <p>O macaco roxo e os ninguens</p>
+                                <p>Caio Maia</p>
+                                <p>R$ 35,00</p>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
 
-                                <div class="card-carrossel">
-                                <img src="assets/imagens/tem_de_tudo_nesta_rua.jpeg" alt="Uma mulher">
+                            <div class="card-carrossel">
+                                <img src="assets/imagens/tem_de_tudo_nesta_rua.jpeg" alt="Tem de tudo nesta rua">
                                 <p>Tem de tudo nesta rua</p>
                                 <p>Marcelo Xavier</p>
                                 <p>R$ 52,60</p>
                                 <button class="btn-comprar">Comprar</button>
-                                 </div>
+                            </div>
                         </li>
 
                         <li class="slide-carrossel">
                             <div class="card-carrossel">
-                                <img src="assets/imagens/tres_noites_de_medo.jpeg" alt="Outro Livro">
+                                <img src="assets/imagens/tres_noites_de_medo.jpeg" alt="Três noites de medo">
                                 <p>Três noites de medo</p>
                                 <p>Rosana Rios</p>
                                 <p>R$ 50,00</p>
                                 <button class="btn-comprar">Comprar</button>
                             </div>
                             <div class="card-carrossel">
-                                <img src="assets/imagens/se_o_mundo_fosse_uma_vila.jpeg" alt="Outro Livro">
+                                <img src="assets/imagens/se_o_mundo_fosse_uma_vila.jpeg"
+                                    alt="Se o mundo fosse uma vila">
                                 <p>Se o mundo fosse uma vila</p>
                                 <p>David J Smith</p>
                                 <p>R$ 46,00</p>
@@ -362,7 +370,7 @@
                             </div>
 
                             <div class="card-carrossel">
-                                <img src="assets/imagens/a_bicicleta_do_tempo.jpeg" alt="É assim que acaba">
+                                <img src="assets/imagens/a_bicicleta_do_tempo.jpeg" alt="A bicicleta do tempo">
                                 <p>A bicicleta do tempo</p>
                                 <p>Daniela Pinotti</p>
                                 <p>R$ 63,00</p>
@@ -374,7 +382,8 @@
                         <li class="slide-carrossel">
 
                             <div class="card-carrossel">
-                                <img src="assets/imagens/enquanto_houver_limoeiros.jpeg" alt="As 48 Leis do Poder">
+                                <img src="assets/imagens/enquanto_houver_limoeiros.jpeg"
+                                    alt="Enquanto houver limoeiros">
                                 <p>Enquanto houver limoeiros</p>
                                 <p>Zoulfa Katouh</p>
                                 <p>R$ 64,90</p>
@@ -382,7 +391,7 @@
                             </div>
 
                             <div class="card-carrossel">
-                                <img src="assets/imagens/reinacoes_de_narizinho.jpeg" alt="Outro Livro">
+                                <img src="assets/imagens/reinacoes_de_narizinho.jpeg" alt="Reinações de narizinho">
                                 <p>Reinações de narizinho</p>
                                 <p>Monteiro Lobato</p>
                                 <p>R$ 99,90</p>
@@ -390,7 +399,7 @@
                             </div>
 
                             <div class="card-carrossel">
-                                <img src="assets/imagens/o_galo_e_a_raposa.jpeg" alt="É assim que acaba">
+                                <img src="assets/imagens/o_galo_e_a_raposa.jpeg" alt="O galo e a raposa">
                                 <p>A raposa e o Galo</p>
                                 <p>Alexandre Camanho</p>
                                 <p>R$ 79,90</p>
@@ -406,7 +415,7 @@
 
         <!--Seção pré-venda-->
 
-        <h2 class="titulo-categoria">PRÉ-VENDA</h2>
+        <h2 id="maisVendidos" class="titulo-categoria">PRÉ-VENDA</h2>
         <section>
             <div class="carrossel">
                 <button class="anterior">❮</button>
@@ -414,21 +423,22 @@
                     <ul class="trilha-carrossel">
                         <li class="slide-carrossel">
                             <div class="card-carrossel">
-                                <img src="assets/imagens/nao-e-como-nos-filmes.jpg" alt="Roube Como um Artista">
+                                <img src="assets/imagens/nao-e-como-nos-filmes.jpg" alt="Não é como nos filmes">
                                 <p>Não é commo nos filmes</p>
                                 <p>Lynn Painter</p>
                                 <p>R$ 39,90</p>
                                 <button class="btn-comprar">Comprar</button>
                             </div>
                             <div class="card-carrossel">
-                                <img src="assets/imagens/o-cristao-pode-beber-colecao-teologia-para-todos.jpg" alt="Empresas Feitas para Vencer">
+                                <img src="assets/imagens/o-cristao-pode-beber-colecao-teologia-para-todos.jpg"
+                                    alt="O cristão pode beber, coleção teologia para todos">
                                 <p>O cristão pode beber? | Coleção Teologia para todos</p>
                                 <p>Marcelo Berti</p>
                                 <p>R$ 14,90</p>
                                 <button class="btn-comprar">Comprar</button>
                             </div>
                             <div class="card-carrossel">
-                                <img src="assets/imagens/elatambem.jpg" alt="Trabalhe 4 Horas por Semana">
+                                <img src="assets/imagens/elatambem.jpg" alt="ELA TAMBÉM">
                                 <p>#ELATAMBÉM</p>
                                 <p>Bonnie Kistler</p>
                                 <p>R$ 44,00</p>
@@ -437,41 +447,42 @@
 
                         </li>
                         <li class="slide-carrossel">
-                                <div class="card-carrossel">
-                                <img src="assets/imagens/para-todas-as-mulheres-que-nao-tem-coragem.jpg" alt="A maquina antibullying">
+                            <div class="card-carrossel">
+                                <img src="assets/imagens/para-todas-as-mulheres-que-nao-tem-coragem.jpg"
+                                    alt="Para todas as mulheres que não tem coragem">
                                 <p>Para todas as mulheres que não têm coragem</p>
                                 <p>Dani Arrais</p>
                                 <p>R$ 34,90</p>
                                 <button class="btn-comprar">Comprar</button>
-                                </div>
+                            </div>
 
-                                <div class="card-carrossel">
-                                    <img src="assets/imagens/a-sinfonia-das-estrelas.jpg" alt="O Jeito Disney de Encantar os Clientes">
-                                    <p>A sinfonia das estrelas</p>
-                                    <p>Rodrigo Ortiz Vinholo</p>
-                                    <p>R$ 9,99</p>
-                                    <button class="btn-comprar">Comprar</button>
-                                </div>
+                            <div class="card-carrossel">
+                                <img src="assets/imagens/a-sinfonia-das-estrelas.jpg" alt="A sinfonia das estrelas">
+                                <p>A sinfonia das estrelas</p>
+                                <p>Rodrigo Ortiz Vinholo</p>
+                                <p>R$ 9,99</p>
+                                <button class="btn-comprar">Comprar</button>
+                            </div>
 
-                                <div class="card-carrossel">
-                                <img src="assets/imagens/nebulosas-1.jpg" alt="Uma mulher">
+                            <div class="card-carrossel">
+                                <img src="assets/imagens/nebulosas-1.jpg" alt="Nebulosas">
                                 <p>Nebulosas</p>
                                 <p>Narcisa Amália, Anna Faedrich</p>
                                 <p>R$ 29,90</p>
                                 <button class="btn-comprar">Comprar</button>
-                                 </div>
+                            </div>
                         </li>
 
                         <li class="slide-carrossel">
                             <div class="card-carrossel">
-                                <img src="assets/imagens/intermezzo-46.jpg" alt="Outro Livro">
+                                <img src="assets/imagens/intermezzo-46.jpg" alt="Intermezzo 46">
                                 <p>Intermezzo</p>
                                 <p>Sally Rooney</p>
                                 <p>R$ 39,90</p>
                                 <button class="btn-comprar">Comprar</button>
                             </div>
                             <div class="card-carrossel">
-                                <img src="assets/imagens/a-lembranca-de-nos.jpg" alt="Outro Livro">
+                                <img src="assets/imagens/a-lembranca-de-nos.jpg" alt="A lembrança de nós">
                                 <p>A lembrança de nós</p>
                                 <p>Dani Atkins</p>
                                 <p>R$ 19,95</p>
@@ -479,7 +490,8 @@
                             </div>
 
                             <div class="card-carrossel">
-                                <img src="assets/imagens/como-vender-uma-casa-assombrada.jpg" alt="É assim que acaba">
+                                <img src="assets/imagens/como-vender-uma-casa-assombrada.jpg"
+                                    alt="Como vender uma casa assombrada">
                                 <p>Como vender uma casa mal assombrada</p>
                                 <p>Grady Hendrix</p>
                                 <p>R$ 46,90</p>
@@ -491,7 +503,7 @@
                         <li class="slide-carrossel">
 
                             <div class="card-carrossel">
-                                <img src="assets/imagens/chatices-do-amor.jpg" alt="As 48 Leis do Poder">
+                                <img src="assets/imagens/chatices-do-amor.jpg" alt="Chatices do amor">
                                 <p>Chatices do amor</p>
                                 <p>Fernanda Young</p>
                                 <p>R$ 39,90</p>
@@ -499,7 +511,7 @@
                             </div>
 
                             <div class="card-carrossel">
-                                <img src="assets/imagens/acrobata-1.jpg" alt="Outro Livro">
+                                <img src="assets/imagens/acrobata-1.jpg" alt="Acrobata">
                                 <p>Acrobata</p>
                                 <p>Alice Sant'Anna, Kiko Farkas</p>
                                 <p>R$ 39,90</p>
@@ -507,7 +519,7 @@
                             </div>
 
                             <div class="card-carrossel">
-                                <img src="assets/imagens/anel-de-vidro-1.jpg" alt="É assim que acaba">
+                                <img src="assets/imagens/anel-de-vidro-1.jpg" alt="Anel de vidro">
                                 <p>Anel de vidro</p>
                                 <p>Ana Luisa Escorel, Daniel Trench</p>
                                 <p>R$ 49,90</p>
@@ -520,10 +532,14 @@
                 <button class="proximo">❯</button>
             </div>
         </section>
-
     </main>
+
+    <footer>
+        <p>&copy; 2025 Art'book. Todos os direitos reservados.</p>
+    </footer>
 
 
     <script src="script.js"></script>
 </body>
+
 </html>

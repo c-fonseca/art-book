@@ -8,18 +8,26 @@
 
 body{
     background-color: #F2F2F2;
+    
 }
 
-header {
+.container-header {
     display: flex;
     align-items: center;
     height: 160px;
-    background-color: rgba(101, 22, 175, 0.26);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(205, 179, 235);
+    flex-direction: column;
+    justify-content: center;
+    z-index: 10000;
 }
 
 .section1 {
     display: flex;
     width: 100%;
+    position: fixed;
 }
 
 .fa-solid {
@@ -43,11 +51,17 @@ header {
     height: 28px;
     width: 600px;
     border-color: #63458C solid;
+    outline: none;
 }
 
 .pesquisa {
     width: 42em;
     margin: auto;
+    
+}
+
+input{
+    padding-left: 1em;
 }
 
 
@@ -66,7 +80,11 @@ header {
     height: 29px;
     box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.192);
     text-decoration: none;
+    width: 100%;
+    margin-top: 180px;
+    background-color: #FCFCFC;
 }
+
 
 .links {
     display: flex;
@@ -82,11 +100,12 @@ header {
 
 .topicos{
     padding-bottom: 30px;
+    
 }
 
 .section3{
     display: flex;
-    margin-top: 40px;
+    margin-top: 19em;
     margin-bottom: 150PX;
     justify-content: center;
     gap: 25px;
@@ -143,6 +162,8 @@ header {
     max-width: 1200px; /* Ajuste conforme necessário */
     margin: 0 auto;
     overflow: hidden; /* Impede o transbordamento dos slides */
+    color: #63458C;
+    font-weight: 900;
 }
 
 .container-trilha-carrossel {
@@ -206,6 +227,16 @@ header {
 }
 
 .btn-comprar:hover {
-    background-color: #f1b72f;
+    background-color: #9b7fcbc0;
+}
+
+footer{
+    display: flex;
+    background-color: rgb(205, 179, 235);
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    color: #63458C;
+    font-weight: 900;
 }
 
